@@ -1,0 +1,45 @@
+/* CustomCursor.css */
+
+.cursor {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #9a78ff;
+    filter: blur(130px);
+    mix-blend-mode: screen;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    animation: colorChange 12s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #94b6ff;
+    }
+    25% {
+      background-color: #9a78ff;
+    }
+    50% {
+      background-color: #ff6da0;
+    }
+    75% {
+      background-color: #9a78ff;
+    }
+    100% {
+      background-color: #94b6ff;
+    }
+  }
+  
+  @keyframes sizeChange {
+    0%,
+    100% {
+      width: 250px;
+      height: 250px;
+    }
+    50% {
+      width: 350px;
+      height: 350px;
+    }
+  }

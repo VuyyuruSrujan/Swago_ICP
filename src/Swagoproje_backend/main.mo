@@ -27,9 +27,7 @@ actor {
     };
 
     nfts := List.push(nft, nfts);
-
     transactionId += 1;
-
     return #Ok({
       token_id = newId;
       id = transactionId;

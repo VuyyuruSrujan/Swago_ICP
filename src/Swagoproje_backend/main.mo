@@ -9,6 +9,7 @@ import Types "./Types";
 import Result "mo:base/Result";
 import HashMap "mo:base/HashMap";
 import Blob "mo:base/Blob";
+import LedgerIndex "canister:icp_index_canister";
 
 actor {
   stable var transactionId: Types.TransactionId = 0;
@@ -40,6 +41,12 @@ actor {
         nft.owner == owner;
     });
     return filteredArray; // Return the filtered array
+};
+
+  public shared func ledgerdata(): async Nat64 {
+    let current_round = (await LedgerIndex.status()).num_blocks_synced - 1;
+    return current_round;
+
 };
 
 };

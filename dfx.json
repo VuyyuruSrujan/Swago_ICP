@@ -14,6 +14,16 @@
       "type": "assets",
       "workspace": "Swagoproje_frontend"
     },
+   "icp_index_canister": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/f9085dbe8d86dcca77b05adaee93d608498dae0b/rs/ledger_suite/icp/index/index.did",
+      "wasm": "https://download.dfinity.systems/ic/f9085dbe8d86dcca77b05adaee93d608498dae0b/canisters/ic-icp-index-canister.wasm.gz",
+            "remote": {
+        "id": {
+          "ic": "qhbym-qaaaa-aaaaa-aaafq-cai"
+        }
+      }
+    },
     "internet_identity": {
       "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
       "frontend": {},

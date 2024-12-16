@@ -46,7 +46,6 @@ actor {
   public shared func ledgerdata(): async Nat64 {
     let current_round = (await LedgerIndex.status()).num_blocks_synced - 1;
     return current_round;
-
-};
+  };
 
 };
